@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalización</title>
+</head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizacion</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+    <header>
+        <img src="../Imagen/Fachada Cordoba.jpg" height="200px" width="500px">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav" id="nav">
+            <ul class="menu">
+                <img src="../Imagen/Logo Ciicap.png" width="80mp" > 
+                <span class="">PROFESORADO DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN</span>
+                <h4>PRÁCTICA DOCENTE II - PORFOLIO DIGITAL</h4>               
+                <li>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="Historia Institucional.html">Historia</a> </li>
+                        <li> <a href="trayectoria.html">Trayectoria</a> </li>
+                        <li> <a href="geolocalizacion.html">Geolocalización</a> </li>
+                        <li> <a href="contexto.html">Contexto</a></li>
+                        <li> <a href="./muro sonoro.html">Muro Sonoro</a></li>
+                        <li> <a href="./Relevamiento.html">Relevamiento</a></li>
+                        <li> <a href="./reflexiones.html">Reflexiones</a></li>
+                        <li> <a href="recursos.html">Recursos</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+               
+    </header>
+<body>
+ 
+     <section id="home" class="page">
+            <h1>ESCUELA PROVINCIAL DE EDUCACIÓN TÉCNICA - EPET N°5</h1>
+                <h2>Ubicación</h2>
+                <p>El establecimiento educativo E.P.E.T. Nº 5 San Juan se encuentra ubicado en la localidad de San Juan perteneciente al departamento de Capital de la Provincia de San Juan. La dirección es Las Heras, Capital, San Juan (CP: J5400).. La dirección es Las Heras, Capital, San Juan (CP: J5400).</p>
+         <div class="map-container">
+            <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1115.0758565870744!2d-68.53810325633005!3d-31.541431168978807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9681403ab8d374a5%3A0xca01a45735fff697!2sE.P.E.T.%20N%C2%B0%205!5e1!3m2!1ses!2sar!4v1721194750901!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+                <p>El 16 de junio de 2011 fue inaugurado el edificio propio de la Escuela Provincial de Educación Técnica N° 5 (EPET), ubicado en avenidas Córdoba y Las Heras. Primera escuela técnica construida en San Juan en 35 años, contó con la presencia del ministro de Educación de la Nación</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1721432800504!6m8!1m7!1somTnWEhOJI_tRL1-Mq-qUw!2m2!1d-31.54158151867273!2d-68.53774585329076!3f40.894141282656264!4f8.89266377940605!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+             
+        
+        <button onclick="scrollToTop ()">Volver Arriba</button>
+
+    </section>
+</main>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
+
+    function initMap() {
+        var location = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
+    
+
+
+    
+    
+       

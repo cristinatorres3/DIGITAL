@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contexto Institucional</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+    <header>
+        <img src="../Imagen/Fachada Cordoba.jpg" height="200px" width="500px">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav" id="nav">
+            <ul class="menu">
+                <img src="../Imagen/Logo Ciicap.png" width="80mp" > 
+                <span class="">PROFESORADO DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN</span>
+                <h4>PRÁCTICA DOCENTE II - PORFOLIO DIGITAL</h4>               
+                <li>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="./Historia Institucional.html">Historia</a> </li>
+                        <li> <a href="./trayectoria.html">Trayectoria</a> </li>
+                        <li> <a href="./geolocalizacion.html">Geolocalización</a> </li>
+                        <li> <a href="./contexto.html">Contexto</a></li>
+                        <li> <a href="./muro sonoro.html">Muro Sonoro</a></li>
+                        <li> <a href="./Relevamiento.html">Relevamiento</a></li>
+                        <li> <a href="./reflexiones.html">Reflexiones</a></li>
+                        <li> <a href="./recursos.html">Recursos</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+               
+    </header>
+
+    <body>
+    
+        <section id="home" class="page">
+            <h1>ESCUELA PROVINCIAL DE EDUCACIÓN TÉCNICA - EPET N°5</h1>
+                        
+             <h2>MURO SONORO</h2>
+             <div class="padlet-slideshow-embed" style="width:720px;height:480px;"><p style="padding:0;margin:0;width:100%;height:100%"><iframe src="https://padlet.com/embed/v0l0aefv53ahs7p0/slideshow?autoplay=0&loop=0&duration=auto" frameborder="0" allow="clipboard-write" style="width:100%;height:100%;display:block;padding:0;margin:0"></iframe></p></div>
+            <br>
+                <br>
+                     <audio controls>
+            <br>
+                <br>
+
+                <source src="../Imagen/Sonidos de la Escuela.mp3" type="audio/mpeg">
+             </audio>
+
+             <br>
+                <br>
+
+            <button onclick="scrollToTop ()">Volver Arriba</button>
+            
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+
+        function initMap() {
+            var location = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

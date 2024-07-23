@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Coloquio</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+    <header>
+        <img src="./Imagen/Fachada Cordoba.jpg" height="200px" width="500px"> 
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav" id="nav">
+            <ul class="menu">
+                <img src="./Imagen/Logo Ciicap.png" width="80mp" > 
+                <span class="">PROFESORADO DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN</span>
+                <h4>PRÁCTICA DOCENTE II - PORFOLIO DIGITAL</h4>               
+                <li>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li> <a href="./pages/Historia Institucional.html">Historia</a> </li>
+                        <li> <a href="./pages/trayectoria.html">Trayectoria</a> </li>
+                        <li> <a href="./pages/geolocalizacion.html">Geolocalización</a> </li>
+                        <li> <a href="./pages/contexto.html">Contexto</a></li>
+                        <li> <a href="./pages/muro sonoro.html">Muro Sonoro</a></li>
+                        <li> <a href="./pages/Relevamiento.html">Relevamiento</a></li>
+                        <li> <a href="./pages/reflexiones.html">Reflexiones</a></li>
+                        <li> <a href="./pages/recursos.html">Recursos</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+               
+    </header>
+
+    <body>
+            
+        
+        <section id="home" class="page">
+
+            <main>
+            
+                <h1>PRÁCTICA DOCENTE II "LA INSTITUCIÓN EDUCATIVA Y LAS PRÁCTICAS CURRICULARES"</h1>
+                <h2>Instituto Superior de Formación Docente: CIICAP</h2>
+                <h2>Prefesorado: Tecnología de la Información y Comunicación</h2>
+                <h2>Estudiantes: Castañeda Torres Leydi Cristina  D.N.I 94.689.430 </h2>
+                <h2>Galván Vanesa Gisela D.N.I 33.759.940</h2>
+                <h2>Coordinadora de Práctica: Cecilia Procopio</h2>
+                <h2>Directora: Graciela Sanchez</h2>
+                <h2>Profesoras: Martínez Nadia - TIC/Informática</h2>
+                <h2>Soria Natalia - Práctica II</h2>
+                <H2>Lorenzo Maria Rosa - Práctica II</H2>
+                                    
+            </main>            
+           
+        </section>
+        
+    </main>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click",() => {
+            nav.classList.toggle("show");
+        });
+
+        function initMap() {
+            var location = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

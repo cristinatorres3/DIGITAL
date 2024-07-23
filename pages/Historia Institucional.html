@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+    <header>
+        <img src="../Imagen/Fachada Cordoba.jpg" height="200px" width="500px">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav" id="nav">
+            <ul class="menu">
+                <img src="../Imagen/Logo Ciicap.png" width="80mp" > 
+                <span class="">PROFESORADO DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN</span>
+                <h4>PRÁCTICA DOCENTE II - PORFOLIO DIGITAL</h4>               
+                <li>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="./Historia Institucional.html">Historia</a> </li>
+                        <li> <a href="./trayectoria.html">Trayectoria</a> </li>
+                        <li> <a href="./geolocalizacion.html">Geolocalización</a> </li>
+                        <li> <a href="./contexto.html">Contexto</a></li>
+                        <li> <a href="./muro sonoro.html">Muro Sonoro</a></li>
+                        <li> <a href="./Relevamiento.html">Relevamiento</a></li>
+                        <li> <a href="./reflexiones.html">Reflexiones</a></li>
+                        <li> <a href="./recursos.html">Recursos</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+               
+    </header>
+
+    <body>
+    
+        <section id="home" class="page">
+            <h1>ESCUELA PROVINCIAL DE EDUCACIÓN TÉCNICA - EPET N°5</h1>
+            <img src="../Imagen/EPET 5.jpg" height="500mp" width="1300mp"> 
+            <p>La institución educativa "E.P.E.T. Nº 5 San Juan" es un establecimiento educativo urbano de gestión pública ubicado en el Departamento de Capital de la Provincia de San Juan, en la modalidad de educación común en los niveles secundario, y secundario técnico avalado por el Instituto Nacional de Educación Tecnológica (INET).</p>
+            <h2>Historia Institucional</h2>
+            <p>La población escolar es heterogénea. Procedentes de diversos lugares de la provincia como Zonda, Ullum. Pocito, Albardón, 9 de Julio, Capital, Rawson, Rivadavia. La escuela constituye así en un factor fundamental para proyectar su futuro.</p>
+            <P>La escuela fue fundada el 21/03/1986 por resolución N° 242 del Consejo Nacional de Educación Técnica (CONET) con el nombre de Escuela Nacional de Educación Técnica N° 5 de San Juan dependiente de la Inspección Regional Cuyo, propuesta de los directores de las EPET N° 1 Ingeniero Rogelio Boero, Arq. Hugo Píllarod y de la EPET N° 4 Oscar Alberto Sánchez con 4 divisiones de 1° año ciclo básico plan 1574/65 funcionando en turno mañana con la siguiente planta funcional; un director de 3°, un secretario de 3°, seis maestros de enseñanza práctica ciclo básico; tres preceptores, cien horas cátedras.</P>
+            <P>Por resolución N° 177C/89 se creó una división de primer año ciclo superior especialidad Mecánica Orientada a Maquinas y Herramientas.</P>
+            <P>Por Ley de la Cámara de Diputados de la Provincia de San Juan N° 6.085 del año 1990 se entrego el terreno destinado para una escuela Secundaria en el Barrio Aramburu. En el año 1992 se inicio el pedido para que el anexo que funcionaba en el Barrio Aramburu se convirtiera en EPET N°1 de Rivadavia, concretándose en el año 1998 y pasando a denominarse EPET N° 7. En el mismo año comenzó a funcionar dos divisiones de 1° año de Energía No Convencional Orientada en Energía Solar. </P>
+            <P>En el año 1996 se despidió a la primera promoción de Técnicos Mecánicos y al año siguiente en Energía No Convencionales Orientación Energía Solar. En el año 2000 cambio el plan de estudios y la Especialidad Mecánica fue reemplazada por la de Equipos e Instalaciones Electromecánicas</P>
+            <P>La escuela función hasta el año 2011 en las instalaciones de la escuela Obreros del Porvenir ubicada en la calle Alem y Córdoba;  hasta el traslado al nuevo edificio.  </P>
+            
+            <button onclick="scrollToTop ()">Volver Arriba</button>
+            
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+
+        function initMap() {
+            var location = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

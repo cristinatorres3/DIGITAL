@@ -1,0 +1,170 @@
+/* styles.css */
+body {
+    font-family: 'Arial Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8e7b9;
+    }
+
+.portada {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    text-align: center;
+    text-align: center;
+        
+}
+
+h1,h2{
+    text-align: center;
+    color: #42042d;
+}
+
+h3{
+    text-align: center;
+    color: #db0f42;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    padding: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+        
+}
+
+.content p{
+    margin-right: 10%;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+}
+
+
+.padlet-slideshow-embed{
+    width: 720px;
+    height: 480px;
+    padding:0;
+    margin: 0 auto;
+}
+
+.padlet-slideshow-embed iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    border: 0;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+    border: 2px solid #0a0909;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+.youtube-video{
+    width: 500px;
+    height: 260px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+
+header {
+    background-color: #170a4e;
+    color: rgb(226, 219, 223);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    color: white;
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: rgb(199, 196, 196);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ff6347;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Digital - Reflexiones</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <img src="../Imagen/Fachada Cordoba.jpg" height="200px" width="500px">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+         <nav class="nav" id="nav">
+            <ul class="menu">
+                <img src="../Imagen/Logo Ciicap.png" width="80mp" > 
+                <span class="">PROFESORADO DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN</span>
+                <h4>PRÁCTICA DOCENTE II - PORFOLIO DIGITAL</h4>               
+                <li>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="./Historia Institucional.html">Historia</a> </li>
+                        <li> <a href="./trayectoria.html">Trayectoria</a> </li>
+                        <li> <a href="./geolocalizacion.html">Geolocalización</a> </li>
+                        <li> <a href="./contexto.html">Contexto</a></li>
+                        <li> <a href="./muro sonoro.html">Muro Sonoro</a></li>
+                        <li> <a href="./Relevamiento.html">Relevamiento</a></li>
+                        <li> <a href="./reflexiones.html">Reflexiones</a></li>
+                        <li> <a href="./recursos.html">Recursos</a></li>
+                
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+       
+        <section id="resources" class="page">
+            <h1>RECURSOS</h1>
+            <h2>MICROCLASE</h2>
+            <H3>Hoy aprenderemos sobre Seguridad Informática  </H3>
+            <p>En esta micro clase aprenderán sobre la seguridad Informática, tema de gran importancia en la sociedad actual, el cual se ha convertido en una tendencia esencial sobre todo para los jóvenes, con la creciente dependencia de la tecnología, es fundamental que los estudiantes comprendan los riesgos asociados y como resguardarse en línea proporcionándoles la información para protegerse de posibles amenazas cibernéticas.</p>
+            <P>En la actualidad, los estudiantes de secundaria utilizan internet y dispositivos digitales para gran variedad de actividades, desde el aprendizaje y la investigación, la comunicación y el entretenimiento. Sin embargo, esta interconexión trae consigo una serie de riesgos, como los virus informáticos, el malware, el phishing y el robo de identidad. Por lo tanto, es esencial que los estudiantes aprendan a protegerse a sí mismos y a sus datos personales.  </P>
+            <br>
+            <br>
+            <h1>AULAS VIRTUALES</h1>
+            <img src="../Imagen/QR CLASSROOM.png" height="300mp" width="300mp">
+        <h2>CLASSROOM DE CRISTINA CASTAÑEDA</h2>
+        <H2>Código de la Clase pvyoysk</H2>
+
+        <br>
+        <br>
+        <img src="../Imagen/MICROCLASE DE GISELA .jpg" height="300mp" width="300mp">
+        <h2>CLASSROOM DE GISELA GALVÁN</h2>
+        <H2>Código de la Clase bvetfz3</H2>
+        <br>
+        <br>
+            <h2>MATERIAL DE INVESTIGACIÓN </h2>
+            <p>Proporcionamos material de investigación para profundizar en los temas tratados en clase...</p>
+
+            <div class="imagen">
+                
+                    <img src="../Imagen/CUADERNILLO DE INFORMATICA.png" height="300mp" width="300mp">
+                    <img src="../Imagen/Delitos Informáticos.png" height="300mp" width="300mp">
+           <br>
+                
+            </div>
+            
+           <br>
+            
+            <button onclick="scrollToTop()">Volver arriba</button>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+
+         function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
